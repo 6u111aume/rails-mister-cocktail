@@ -7,7 +7,7 @@
       <strong><%= dose.description%></strong>
       <%= dose.ingredient.name %>
       <%= link_to raw('<i class="fa fa-trash" aria-hidden="true"></i>
-'),  cocktail_dose_path(@cocktail, dose), method: :delete, data: { confirm: "Are you sure to delete #{dose.ingredient.name}?"} %>
+'),  dose_path(@cocktail, dose), method: :delete, data: { confirm: "Are you sure to delete #{dose.ingredient.name}?"} %>
     </li>
   <% end %>
 </ul>
