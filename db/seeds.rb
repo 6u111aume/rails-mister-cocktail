@@ -1,10 +1,13 @@
 require "json"
 require "open-uri"
 
-
-puts "cleaning database"
-Ingredient.destroy_all
+puts "cleaning cocktails"
 Cocktail.destroy_all
+
+puts "cleaning ingredients"
+Ingredient.destroy_all
+
+puts "cleaning doses"
 Dose.destroy_all
 
 puts "creating ingredients"
